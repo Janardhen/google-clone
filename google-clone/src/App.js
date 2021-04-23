@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './Home';
+import SearchPage from './SearchPage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,7 +13,8 @@ function App() {
       <Router> 
       <Switch>
           <Route path="/search">
-          <h1>This is search page</h1>
+          <SearchPage />
+         
           </Route>
           <Route path="/">
             <Home />

@@ -9,7 +9,7 @@ function SearchPage() {
 
             <div className = "searchPage__header">
 
-                <h1>This is homepage</h1>
+                <h1>{term}</h1>
             </div>
 
             <div className = "searchPage__results">

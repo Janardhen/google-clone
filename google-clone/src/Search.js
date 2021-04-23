@@ -13,21 +13,19 @@ function Search({hideButtons = false }) {
     const history = useHistory();
 
     const search = (e) => {
-        // e.preventDefault();
-debugger;
+        e.preventDefault();
         console.log("You have hit the search button >>",input)
 
-        // dispatch({
-        //     type: actionTypes.SET_SEARCH_TERM,
-        //     term: input
-        // })
-alert("heyyy")
+        dispatch({
+            type: actionTypes.SET_SEARCH_TERM,
+         term: input
+         })
 
-        // history.push('/search')
+        history.push('/search')
         
     };
     return (
-        <form className = 'search'>
+        <form className = 'search' onSubmit = {search}>
             <div className='search__input'>
                 <SearchIcon className = 'searchinputIcon'/>
                 <input value ={input} onChange={e => setInput(e.target.value)}/>

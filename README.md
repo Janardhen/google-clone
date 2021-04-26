@@ -2,7 +2,7 @@
 
 # Google-Wikipedia-Search_Engine 
 
-Worked on this project as a challenge. This program uses programmable search engine API to fetch data limited to 100 requests per day. 
+Worked on this project as a challenge. This program uses custom search engine API to fetch data limited to 100 requests per day. 
 
 
 

@@ -93,13 +93,52 @@ function SearchPage() {
 
 
             </div>
-    
+
+            {term && (
+              <div className = "searchPage__results">
+                  <p
+                  className = "searchPage_resultCount">
+                      About {data?.searchInformation.formattedTotalResults}
+                      results({data?.searchInformation.formattedSearchTime} seconds)
+                      for {term}
+                  </p>
+
+                  {data?.items.map(item => (
+                      <div 
+                      className = "searchPage__result">
+                          <a className = "searchPage__resultLink"href = {item.link}>
+                              {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                                  <img className = "searchPage__resultImage" src =
+                                    {
+                                      item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src
+                                    }
+                                    alt = ""
+
+                                />
 
 
-            <div className = "searchPage__results">
+
+                              )}
+                            {item.displayLink} 
+                          </a>
+                          <a className = "searchPage__resultTitle"
+                          href = {item.link}>
+                              <h2>{item.title}</h2>
+                         </a>
+                         <p className = "searchPage__resultSnippet">
+                         {item.snippet}
+                         </p>
+                         
+
+                        </div>
+
+                    ))}
 
 
             </div>
+
+            )}
+
 
 
         </div>

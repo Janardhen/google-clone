@@ -1,6 +1,6 @@
 # CLONE
 
-# google-Wikipedia-search_engine 
+# Google-Wikipedia-Search_Engine 
 
 Worked on this project as a challenge. 
 

@@ -4,6 +4,10 @@
 
 Worked on this project as a challenge. This program uses custom search engine API to fetch data limited to 100 requests per day. 
 
+# Hosted using FIREBASE
+
+Url : https://clone-31bf0.web.app
+
 
 
 
